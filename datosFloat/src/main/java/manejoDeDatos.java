@@ -5,5 +5,13 @@ public class manejoDeDatos {
 
         System.out.println(numero1);
         System.out.println(numero2);
+
+
+
+        int numero3 = 30;
+        int numero4 = 40;
+        float resultado = numero3 + numero4;
+
+        System.out.println(resultado);
     }
 }
