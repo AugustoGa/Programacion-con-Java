@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="datosFloat">
+    <output-path>$PROJECT_DIR$/out/artifacts/datosFloat</output-path>
+    <root id="archive" name="datosFloat.jar" />
+  </artifact>
+</component>
