@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="numeroDeMes">
+    <output-path>$PROJECT_DIR$/out/artifacts/numeroDeMes</output-path>
+    <root id="archive" name="numeroDeMes.jar" />
+  </artifact>
+</component>
