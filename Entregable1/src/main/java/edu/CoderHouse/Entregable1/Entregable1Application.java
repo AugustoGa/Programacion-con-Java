@@ -4,9 +4,6 @@ package edu.CoderHouse.Entregable1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.List;
-import java.util.Optional;
-
 @SpringBootApplication
 public class Entregable1Application  {
 

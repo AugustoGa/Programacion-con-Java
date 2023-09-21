@@ -3,6 +3,9 @@ package edu.CoderHouse.Entregable1.Model;
 import javax.persistence.*;
 import java.util.Date;
 
+
+@Entity
+@Table(name = "invoice")
 public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

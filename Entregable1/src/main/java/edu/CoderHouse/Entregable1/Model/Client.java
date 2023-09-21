@@ -17,11 +17,11 @@ public class Client {
 
     private String name;
 
-    // @Column Hace referencia a la columna lastname en schema.sql
+    // @Column Hace referencia a la columna lastname en tables.sql
     @Column(name = "lastname")
     private String lastname;
 
-    @Column(name = "docnumber")
+    @Column(name = "doc_number")
     private String docnumber;
 
 
