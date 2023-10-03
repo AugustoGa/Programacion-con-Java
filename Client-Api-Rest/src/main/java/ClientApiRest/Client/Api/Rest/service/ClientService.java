@@ -1,8 +1,9 @@
 package ClientApiRest.Client.Api.Rest.service;
 
 
+
+import ClientApiRest.Client.Api.Rest.model.Client;
 import ClientApiRest.Client.Api.Rest.repository.ClientRepository;
-import ch.qos.logback.core.net.server.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,15 +12,15 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.LinkedHashMap;
 
 @Service
 public class ClientService {
-
     @Autowired
     private ClientRepository clientRepository;
+
     public Map postClient(Client clientSaved) throws Exception {
         //Evaluo si el formato de la fecha es el correcto
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");//inicializo un formato de fecha
@@ -79,3 +80,8 @@ public class ClientService {
         }
     }
 }
+
+
+
+
+

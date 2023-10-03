@@ -6,8 +6,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "client")
-public class Clint {
-
+public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,15 +20,6 @@ public class Clint {
     private String fechaNacimiento;
 
 
-    public Clint() {
-    }
-
-    public Clint(int id, String nombre, String apellido, String fechaNacimiento) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
-    }
 
     public int getId() {
         return id;
@@ -63,14 +53,15 @@ public class Clint {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-
     @Override
     public String toString() {
-        return "Clint{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
+        return "Client{" +
+                "id='" + id + '\'' +
+                "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", fechaNacimiento='" + fechaNacimiento + '\'' +
                 '}';
+
     }
+
 }

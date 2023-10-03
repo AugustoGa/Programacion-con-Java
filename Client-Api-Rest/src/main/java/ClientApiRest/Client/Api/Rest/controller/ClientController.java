@@ -2,8 +2,9 @@ package ClientApiRest.Client.Api.Rest.controller;
 
 
 import ClientApiRest.Client.Api.Rest.middleware.ResponseHandler;
+import ClientApiRest.Client.Api.Rest.model.Client;
 import ClientApiRest.Client.Api.Rest.service.ClientService;
-import ch.qos.logback.core.net.server.Client;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -64,3 +65,4 @@ public class ClientController {
 
 
 }
+
