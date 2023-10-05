@@ -7,6 +7,7 @@ import ClientApiRest.Client.Api.Rest.service.ClientService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,7 +23,7 @@ public class ClientController {
     //CRUD cliente
 
     //Create
-    @PostMapping
+    @PostMapping(value = "/", produces = {MediaType.APPLICATION_JSON_VALUE}, consumes = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<Object> postClient (@RequestBody Client client) {
         try {
             System.out.println(client);
@@ -43,7 +44,8 @@ public class ClientController {
         }
     }
 
-    @GetMapping(path = "{id}")
+
+    @GetMapping(value = "{id}", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<Object> getClient (@PathVariable() int id) {
         try {
             System.out.println(id);
