@@ -1,7 +1,7 @@
-package SegEntrega.SegegundaEntrega.Service;
+package SegEntrega.SegundaEntrega.Service;
 
-import SegEntrega.SegegundaEntrega.Entity.Client;
-import SegEntrega.SegegundaEntrega.Repository.ClientRepository;
+import SegEntrega.SegundaEntrega.Entity.Client;
+import SegEntrega.SegundaEntrega.Repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package SegEntrega.SegegundaEntrega;
+package SegEntrega.SegundaEntrega;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,7 @@ public class SegegundaEntregaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SegegundaEntregaApplication.class, args);
 	}
+
+
 
 }

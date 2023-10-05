@@ -1,7 +1,7 @@
-package SegEntrega.SegegundaEntrega.Controller;
+package SegEntrega.SegundaEntrega.Controller;
 
-import SegEntrega.SegegundaEntrega.Entity.Client;
-import SegEntrega.SegegundaEntrega.Service.ClientService;
+import SegEntrega.SegundaEntrega.Entity.Client;
+import SegEntrega.SegundaEntrega.Service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

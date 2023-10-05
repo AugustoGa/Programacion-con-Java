@@ -1,4 +1,4 @@
-package SegEntrega.SegegundaEntrega.Entity;
+package SegEntrega.SegundaEntrega.Entity;
 
 
 import jakarta.persistence.*;
@@ -14,7 +14,8 @@ public class InvoiceDetails {
     @OneToOne
     private Invoice invoice;
 
-    @OneToMany
+    @ManyToOne
+    @JoinColumn(name = "product_id")
     private Product product;
 
     private Integer amount;

@@ -1,4 +1,4 @@
-package SegEntrega.SegegundaEntrega.Entity;
+package SegEntrega.SegundaEntrega.Entity;
 
 
 import jakarta.persistence.*;
@@ -13,7 +13,8 @@ public class Invoice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @OneToMany
+    @ManyToOne
+    @JoinColumn(name = "client_id")
     private Client client;
 
     private Date createdAt;

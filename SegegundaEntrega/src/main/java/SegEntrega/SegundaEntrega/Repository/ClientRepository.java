@@ -1,6 +1,6 @@
-package SegEntrega.SegegundaEntrega.Repository;
+package SegEntrega.SegundaEntrega.Repository;
 
-import SegEntrega.SegegundaEntrega.Entity.Client;
+import SegEntrega.SegundaEntrega.Entity.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

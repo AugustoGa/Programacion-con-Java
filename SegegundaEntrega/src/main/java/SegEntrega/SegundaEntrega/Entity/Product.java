@@ -1,4 +1,4 @@
-package SegEntrega.SegegundaEntrega.Entity;
+package SegEntrega.SegundaEntrega.Entity;
 
 import jakarta.persistence.*;
 
