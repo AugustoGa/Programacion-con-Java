@@ -1,6 +1,7 @@
 package com.example.demo.Entity;
 
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,29 +10,20 @@ public class InvoiceDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(hidden = true)
     private Long id;
 
-    @OneToMany
+    @OneToOne
     private Invoice invoice;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
 
     private Integer amount;
 
+    @Schema(hidden = true)
     private Double total;
-
-    public InvoiceDetails() {
-    }
-
-    public InvoiceDetails(Long id, Invoice invoice, Product product, Integer amount, Double total) {
-        this.id = id;
-        this.invoice = invoice;
-        this.product = product;
-        this.amount = amount;
-        this.total = total;
-    }
 
     public Long getId() {
         return id;
@@ -70,6 +62,14 @@ public class InvoiceDetails {
     }
 
     public void setTotal(Double total) {
+        this.total = total;
+    }
+
+    public InvoiceDetails(Long id, Invoice invoice, Product product, Integer amount, Double total) {
+        this.id = id;
+        this.invoice = invoice;
+        this.product = product;
+        this.amount = amount;
         this.total = total;
     }
 }

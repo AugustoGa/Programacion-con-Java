@@ -1,6 +1,7 @@
 package com.example.demo.Entity;
 
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,14 +10,19 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(hidden = true)
     private Long id;
 
+    @Schema(hidden = true)
     private String description;
 
+    @Schema(hidden = true)
     private String code;
 
+    @Schema(hidden = true)
     private Integer stock;
 
+    @Schema(hidden = true)
     private Double total;
 
     public Product() {
